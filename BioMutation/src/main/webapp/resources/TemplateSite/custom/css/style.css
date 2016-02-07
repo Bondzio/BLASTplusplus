@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+.position-center {
+	text-align: center;
+}
+
+.position-left {
+	text-align: left;
+}
+
+.position-right {
+	text-align: right;
+}
