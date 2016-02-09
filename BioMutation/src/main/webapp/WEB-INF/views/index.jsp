@@ -47,8 +47,8 @@
 			<div class="col-sm-4">
 				<h3 class="position-left text-primary">Who made BLAST++</h3>
 				<p>
-					BLAST++ was created by <a href="#" target="on_blank">Basheer Becerra</a> or more informally
-					known as <a href="#" target="on_blank">CodingBash</a>. View his personal website <a href="#">here</a>.
+					BLAST++ was created by <a href="#" target="on_blank">...</a> or more informally
+					known as <a href="#" target="on_blank">...</a>. View his personal website <a href="#">here</a>.
 				</p>
 			</div>
 			< <br /> <br />
