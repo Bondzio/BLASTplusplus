@@ -11,3 +11,28 @@
 .position-right {
 	text-align: right;
 }
+
+.jumbotron{
+	background-color: #0033cc;
+}
+
+.white{
+	color:#FFFFFF;
+}
+
+.inline {
+	display: inline;
+}
+
+.medium{
+	font-size: 200%;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+#header-container{
+	margin: 30px 50px;
+	
+}

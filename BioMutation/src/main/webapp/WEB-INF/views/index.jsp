@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>BLAST++: Basic Local Alignment Search Tool (upgraded)</title>
 
 
 <link href="<c:url value="/resources/bootstrap/css/bootstrap.min.css" />" rel="stylesheet">
@@ -14,9 +14,16 @@
 </head>
 <body>
 	<div class="container-fluid">
+
 		<div class="jumbotron">
-			<h1>BLAST++</h1>
-			<p>An interactive way to conduct BLAST search with more analysis, visualization, etc.</p>
+			<div class="container" id="header-container">
+				<!-- class for header won't work for some reason -->
+				<h1 class="white inline bold" style="color: #FFFFFF;">BLAST</h1>
+				<span class="glyphicon glyphicon-plus white medium"></span><span
+					class="glyphicon glyphicon-plus white medium"></span>
+				<p class="white">An interactive sway to conduct BLAST search with more analysis,
+					visualization, etc.</p>
+			</div>
 		</div>
 	</div>
 
