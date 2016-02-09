@@ -13,16 +13,16 @@
 <link href="<c:url value="/resources/custom/css/style.css" />" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-
-		<div class="col-sm-12">
-			<div class="jumbotron">
-				<h1>BLAST++</h1>
-				<p>An interactive way to conduct BLAST search with more analysis, visualization, etc.</p>
-			</div>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1>BLAST++</h1>
+			<p>An interactive way to conduct BLAST search with more analysis, visualization, etc.</p>
 		</div>
+	</div>
 
-		<div class="col-sm-12">
+	<div class="container-fluid">
+
+		<div class="row">
 			<div class="col-sm-4">
 				<h3 class="position-left text-primary">What is BLAST++</h3>
 				<p>
@@ -44,33 +44,40 @@
 					known as <a href="#" target="on_blank">CodingBash</a>. View his personal website <a href="#">here</a>.
 				</p>
 			</div>
+			< <br /> <br />
 
-			<br /> <br />
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="position-center text-primary">Enter your sequence in FASTA format</h3>
+						<form role="form" method="POST" action="submit_sequence">
+							<div class="form-group">
+								<label for="sequence">Sequence:</label>
+								<input type="text" class="form-control" id="sequence" name="sequence">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
 
-			<div class="col-sm-12">
-				<h3 class="position-center text-primary">Enter your sequence in FASTA format</h3>
-				<form role="form" method="POST" action="submit_sequence">
-					<div class="form-group">
-						<label for="sequence">Sequence:</label>
-						<input type="text" class="form-control" id="sequence" name="sequence">
+						<br />
+
+						<%-- Choose to display DNA sequence based on value --%>
+						<%-- There is still a NullPointerException that raises when a bad sequence is entered --%>
+						<c:choose>
+							<c:when test="${empty dnaSequence}">
+								<p id="sequence" class="null">No DNA Sequence found!</p>
+							</c:when>
+							<c:otherwise>
+								<p id="sequence">${dnaSequence}</p>
+							</c:otherwise>
+						</c:choose>
 					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-
-				<br />
-
-				<%-- Choose to display DNA sequence based on value --%>
-				<%-- There is still a NullPointerException that raises when a bad sequence is entered --%>
-				<c:choose>
-					<c:when test="${empty dnaSequence}">
-						<p id="sequence" class="null">No DNA Sequence found!</p>
-					</c:when>
-					<c:otherwise>
-						<p id="sequence">${dnaSequence}</p>
-					</c:otherwise>
-				</c:choose>
+				</div>
 			</div>
 		</div>
+	</div>
+
+
+
 
 	</div>
 	<!-- scripts -->
